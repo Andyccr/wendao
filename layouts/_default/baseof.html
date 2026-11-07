@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  {{ partial "mobile-nav.html" . }}
+  {{ partial "sidebar.html" . }}
+  <div class="stream-container">
+    <main class="post-list-container" id="content">
+      {{ block "main" . }}{{ end }}
+    </main>
+    <footer class="stream-footer">
+      © Andy Chen
+    </footer>
+  </div>
+  <script src="{{ "js/site.js" | relURL }}"></script>
+</body>
+</html>
