@@ -1,0 +1,17 @@
+{{ $page := . }}
+<div class="nav-langs">
+  {{ range $i, $site := site.Sites }}
+    {{ $lang := $site.Language.Lang }}
+    {{ $dest := $site.Home.RelPermalink }}
+    {{ range $page.AllTranslations }}
+      {{ if eq .Lang $lang }}
+        {{ $dest = .RelPermalink }}
+      {{ end }}
+    {{ end }}
+    {{ if eq $lang $page.Lang }}
+      {{ continue }}
+    {{ end }}
+    {{ $label := i18n (printf "lang_%s" $lang) }}
+    <a href="{{ $dest }}" hreflang="{{ $site.Language.LanguageCode }}">{{ $label }}</a>
+  {{ end }}
+</div>

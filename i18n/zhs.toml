@@ -1,0 +1,41 @@
+[nav_posts]
+other = "文章"
+
+[nav_archives]
+other = "归档"
+
+[nav_about]
+other = "关于"
+
+[nav_label]
+other = "站点导航"
+
+[original]
+other = "原文"
+
+[not_found]
+other = "页面不存在"
+
+[not_found_body]
+other = "没有找到这个页面。"
+
+[back_home]
+other = "返回文章列表"
+
+[open_menu]
+other = "打开菜单"
+
+[close_menu]
+other = "关闭菜单"
+
+[lang_zhs]
+other = "简体版"
+
+[lang_zht]
+other = "正體版"
+
+[lang_en]
+other = "English"
+
+[rss]
+other = "RSS"

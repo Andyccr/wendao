@@ -1,0 +1,41 @@
+[nav_posts]
+other = "Posts"
+
+[nav_archives]
+other = "Archive"
+
+[nav_about]
+other = "About"
+
+[nav_label]
+other = "Site navigation"
+
+[original]
+other = "Original"
+
+[not_found]
+other = "Page not found"
+
+[not_found_body]
+other = "This page does not exist."
+
+[back_home]
+other = "Back to posts"
+
+[open_menu]
+other = "Open menu"
+
+[close_menu]
+other = "Close menu"
+
+[lang_zhs]
+other = "简体版"
+
+[lang_zht]
+other = "正體版"
+
+[lang_en]
+other = "English"
+
+[rss]
+other = "RSS"

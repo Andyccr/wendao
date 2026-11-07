@@ -9,7 +9,7 @@
     mask.classList.toggle("is-open", open);
     document.body.classList.toggle("drawer-open", open);
     toggle.setAttribute("aria-expanded", open ? "true" : "false");
-    toggle.setAttribute("aria-label", open ? "关闭菜单" : "打开菜单");
+    toggle.setAttribute("aria-label", open ? (toggle.getAttribute("data-close-label") || "Close") : (toggle.getAttribute("data-open-label") || "Open"));
   }
 
   toggle.addEventListener("click", function () {

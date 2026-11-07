@@ -10,7 +10,7 @@
     {{ .Content }}
   </div>
   {{ with .Params.original_url }}
-  <p class="original-url"><a href="{{ . }}">原文</a></p>
+  <p class="original-url"><a href="{{ . }}">{{ i18n "original" }}</a></p>
   {{ end }}
 </article>
 {{ end }}
