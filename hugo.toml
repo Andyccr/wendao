@@ -1,0 +1,45 @@
+baseURL = "https://andyccr.github.io/wendao/"
+languageCode = "zh-Hans"
+defaultContentLanguage = "zh-hans"
+title = "问道"
+copyright = "© Andy Chen"
+enableRobotsTXT = true
+enableEmoji = false
+hasCJKLanguage = true
+summaryLength = 70
+rssLimit = 50
+disableKinds = ["taxonomy", "term"]
+
+[pagination]
+pagerSize = 200
+
+[params]
+  subtitle = "Andy Chen"
+  description = "Andy Chen 的个人博客「问道」。"
+  author = "Andy Chen"
+  github = "https://github.com/Andyccr"
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[outputFormats.RSS]
+  mediatype = "application/rss+xml"
+  baseName = "index"
+
+[permalinks]
+  posts = "/posts/:slug/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+  [markup.highlight]
+    style = "github"
+    noClasses = true
+    lineNos = false
+    guessSyntax = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3

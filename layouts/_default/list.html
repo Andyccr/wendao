@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="post-page">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+  </header>
+  {{ range .Pages }}
+  <a class="post-item-link" href="{{ .RelPermalink }}">
+    <article class="post-item post-item-compact">
+      <h2 class="post-item-title">{{ .Title }}</h2>
+      {{ if not .Date.IsZero }}
+      <time class="post-item-meta" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      {{ end }}
+    </article>
+  </a>
+  {{ end }}
+</article>
+{{ end }}
