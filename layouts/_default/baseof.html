@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="{{ .Site.Language.LanguageCode }}">
 <head>
   {{ partial "head.html" . }}
 </head>
 <body>
   {{ partial "mobile-nav.html" . }}
   {{ partial "sidebar.html" . }}
+  {{ partial "extra.html" . }}
   <div class="stream-container">
     <main class="post-list-container" id="content">
       {{ block "main" . }}{{ end }}

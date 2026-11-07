@@ -1,0 +1,41 @@
+[nav_posts]
+other = "文章"
+
+[nav_archives]
+other = "歸檔"
+
+[nav_about]
+other = "關於"
+
+[nav_label]
+other = "網站導覽"
+
+[original]
+other = "原文"
+
+[not_found]
+other = "頁面不存在"
+
+[not_found_body]
+other = "沒有找到這個頁面。"
+
+[back_home]
+other = "返回文章列表"
+
+[open_menu]
+other = "打開選單"
+
+[close_menu]
+other = "關閉選單"
+
+[lang_zhs]
+other = "简体版"
+
+[lang_zht]
+other = "正體版"
+
+[lang_en]
+other = "English"
+
+[rss]
+other = "RSS"

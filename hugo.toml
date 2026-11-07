@@ -1,6 +1,4 @@
 baseURL = "https://andyccr.github.io/wendao/"
-languageCode = "zh-Hans"
-defaultContentLanguage = "zh-hans"
 title = "问道"
 copyright = "© Andy Chen"
 enableRobotsTXT = true
@@ -9,13 +7,14 @@ hasCJKLanguage = true
 summaryLength = 70
 rssLimit = 50
 disableKinds = ["taxonomy", "term"]
+defaultContentLanguage = "zhs"
+defaultContentLanguageInSubdir = true
 
 [pagination]
 pagerSize = 200
 
 [params]
   subtitle = "Andy Chen"
-  description = "Andy Chen 的个人博客「问道」。"
   author = "Andy Chen"
   github = "https://github.com/Andyccr"
 
@@ -43,3 +42,32 @@ pagerSize = 200
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 3
+
+[languages]
+  [languages.zhs]
+    languageCode = "zh-Hans"
+    languageName = "简体"
+    title = "问道"
+    weight = 1
+    contentDir = "content/zhs"
+    [languages.zhs.params]
+      subtitle = "Andy Chen"
+      description = "Andy Chen 的个人博客「问道」。"
+  [languages.zht]
+    languageCode = "zh-Hant"
+    languageName = "正體"
+    title = "問道"
+    weight = 2
+    contentDir = "content/zht"
+    [languages.zht.params]
+      subtitle = "Andy Chen"
+      description = "Andy Chen 的個人部落格「問道」。"
+  [languages.en]
+    languageCode = "en"
+    languageName = "English"
+    title = "问道"
+    weight = 3
+    contentDir = "content/en"
+    [languages.en.params]
+      subtitle = "Andy Chen"
+      description = "Andy Chen's personal blog Wendao."
